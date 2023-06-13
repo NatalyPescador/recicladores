@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 50px 280px;
+    padding: 30px;
+    border: 1px solid #D2F2BB;
+    border-radius: 40px;
+    background-color: #D2F2BB;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 45px;
+    color: #D2F2BB;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #D2F2BB;
+    text-align: center;
+}
+
+input,
+.label,
+button {
+    display: block;
+    margin: 10px 0;
+}
+
+.radio {
+    display: inline;
+}
+
+label, 
+p {
+    color: #647336;
+    font-size: 17px;
+}
+
+.left_margin {
+    margin-left: 12px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 400px;
+    height: 20px;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #94BF80;
+    color: #ffffff;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #eff5ec;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    color: #eff5ec;
+}
+
+select,
+input[type="date"] {
+    padding: 1px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #94BF80;
+    color: #eff5ec;
+}
+
+select:focus,
+input[type="date"] {
+    outline: none;
+}
+
+.button_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #547336;
+    color: #D2F2BB;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #94BF80;
+    color: #ffffff;
+}
+
+.answer {
+    max-width: 300px;
+    height: max-content;
+    margin-top: -20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (min-width:900px) {
+    .container {
+        align-self: flex-start;
+
+    }
+}
+
+@media screen and (max-width:460px) {
+    body {
+        background-color: #6BA555;
+        background-position-x: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: -10px 0 0 0;
+        padding: 0 20px 20px 20px;
+        border: none;
+        border-radius: 0px;
+        background-color: rgba(107, 165, 85, 70%);
+
+    }
+
+    label, 
+    p {
+        color: #D2F2BB;
+        font-size: 17px;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        width: 100%;
+        height: 25px;
+        padding: 12px 15px;
+        font-size: 15px;
+        border: none;
+        border-radius: 10px;
+        background-color: #94BF80;
+        color: #eff5ec;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="tel"]::placeholder {
+        color: #D2F2BB;
+    }
+
+    input[type="text"]:focus,
+    input[type="tel"]:focus {
+        outline: none;
+        color: #eff5ec;
+    }
+}
+
+.ocultar {
+    display: none;
+}

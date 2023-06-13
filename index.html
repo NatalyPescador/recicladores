@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Campaña Reciclaje</title>
+</head>
+<body>
+    <h1>Campaña de Reciclaje</h1>
+    <h2>Cooperativa Nacional de Recicladores</h2>
+    <h2>(CNR)</h2>
+    <div class="container">
+        <form>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Digite su nombre">
+            <label for="lastname">Apellidos</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Digite sus apellidos">
+            <label for="cel">Celular</label>
+            <input type="tel" name="cel" id="cel" placeholder="Digite su número celular">
+            <p>Seleccione el tipo de documento:</p>
+            <input type="radio" name="type" id="ti" class="radio">
+            <label for="ti">T.I</label>
+            <input type="radio" name="type" id="cc" class="radio left_margin">
+            <label for="cc">C.C</label>
+            <input type="radio" name="type" id="ex" class="radio left_margin">
+            <label for="ex">Cedula de extranjería</label>
+            <label for="id" class="label">Numero de documento</label>
+            <input type="text" name="id" id="num_id" placeholder="Digite su documento de identidad">
+            <div class="ocultar" id="visible">
+                <p>¿Tiene permiso de trabajar en Colombia?</p>
+                <input type="radio" name="permiso" id="si" class="radio">
+                <label for="si">Sí</label>
+                <input type="radio" name="permiso" id="no" class="radio left_margin">
+                <label for="no">No</label>
+            </div>
+            <label for="sex" class="label">Seleccione el genero con el que se identifica</label>
+            <select name="sex" id="sex">
+                <option class="options" value="-">-</option>
+                <option class="options" value="femenine" id="femenine" >Femenino</option>
+                <option class="options" value="masculine" id="masculine">Masculino</option>
+            </select>
+            <label for="age" class="label">Edad</label>
+            <input type="text" name="age" id="age" placeholder="Digite su edad">
+            <label for="estrato" class="label">Seleccione su estrato</label>
+            <select name="estrato" id="estrato">
+                <option value="-">-</option>
+                <option value="1" id="uno">1</option>
+                <option value="2" id="dos">2</option>
+                <option value="3" id="tres">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+           </select>
+            <div class="button_div">
+                <button type="button" onclick="validacion()">Enviar</button>
+            </div>
+        </form>
+        <div class="answer">
+            <p class="p_answer" id="answer"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
